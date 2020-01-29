@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadCli", "CadCli\CadCli.csproj", "{372DB2D2-18A9-4583-8E51-A1286DD42852}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{372DB2D2-18A9-4583-8E51-A1286DD42852}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{372DB2D2-18A9-4583-8E51-A1286DD42852}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{372DB2D2-18A9-4583-8E51-A1286DD42852}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{372DB2D2-18A9-4583-8E51-A1286DD42852}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4FA3BD90-022D-4781-9D9E-E210979EE996}
+	EndGlobalSection
+EndGlobal

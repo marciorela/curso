@@ -1,0 +1,14 @@
+D:\fontes\visualstudio\curso\kaSolution\mod5\MRsoft.Store\MRsoft.Store.ClientSPA\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+D:\fontes\visualstudio\curso\kaSolution\mod5\MRsoft.Store\MRsoft.Store.ClientSPA\bin\Debug\netcoreapp2.1\MRsoft.Store.ClientSPA.deps.json
+D:\fontes\visualstudio\curso\kaSolution\mod5\MRsoft.Store\MRsoft.Store.ClientSPA\bin\Debug\netcoreapp2.1\MRsoft.Store.ClientSPA.runtimeconfig.json
+D:\fontes\visualstudio\curso\kaSolution\mod5\MRsoft.Store\MRsoft.Store.ClientSPA\bin\Debug\netcoreapp2.1\MRsoft.Store.ClientSPA.runtimeconfig.dev.json
+D:\fontes\visualstudio\curso\kaSolution\mod5\MRsoft.Store\MRsoft.Store.ClientSPA\bin\Debug\netcoreapp2.1\MRsoft.Store.ClientSPA.dll
+D:\fontes\visualstudio\curso\kaSolution\mod5\MRsoft.Store\MRsoft.Store.ClientSPA\bin\Debug\netcoreapp2.1\MRsoft.Store.ClientSPA.pdb
+D:\fontes\visualstudio\curso\kaSolution\mod5\MRsoft.Store\MRsoft.Store.ClientSPA\obj\Debug\netcoreapp2.1\MRsoft.Store.ClientSPA.csprojAssemblyReference.cache
+D:\fontes\visualstudio\curso\kaSolution\mod5\MRsoft.Store\MRsoft.Store.ClientSPA\obj\Debug\netcoreapp2.1\MRsoft.Store.ClientSPA.RazorAssemblyInfo.cache
+D:\fontes\visualstudio\curso\kaSolution\mod5\MRsoft.Store\MRsoft.Store.ClientSPA\obj\Debug\netcoreapp2.1\MRsoft.Store.ClientSPA.RazorAssemblyInfo.cs
+D:\fontes\visualstudio\curso\kaSolution\mod5\MRsoft.Store\MRsoft.Store.ClientSPA\obj\Debug\netcoreapp2.1\MRsoft.Store.ClientSPA.AssemblyInfoInputs.cache
+D:\fontes\visualstudio\curso\kaSolution\mod5\MRsoft.Store\MRsoft.Store.ClientSPA\obj\Debug\netcoreapp2.1\MRsoft.Store.ClientSPA.AssemblyInfo.cs
+D:\fontes\visualstudio\curso\kaSolution\mod5\MRsoft.Store\MRsoft.Store.ClientSPA\obj\Debug\netcoreapp2.1\MRsoft.Store.ClientSPA.RazorTargetAssemblyInfo.cache
+D:\fontes\visualstudio\curso\kaSolution\mod5\MRsoft.Store\MRsoft.Store.ClientSPA\obj\Debug\netcoreapp2.1\MRsoft.Store.ClientSPA.dll
+D:\fontes\visualstudio\curso\kaSolution\mod5\MRsoft.Store\MRsoft.Store.ClientSPA\obj\Debug\netcoreapp2.1\MRsoft.Store.ClientSPA.pdb

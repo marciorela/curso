@@ -1,0 +1,24 @@
+﻿<h2>@ViewBag.Title</h2>
+
+<form method="post">
+
+    <div class="form-group">
+        <label>Nome</label>
+        <input class="form-control" type="text" name="nome" value="@Model?.Nome" autofocus required>
+    </div>
+
+    <div class="form-group">
+        <label>E-mail</label>
+        <input class="form-control" type="email" name="Email" value="@Model?.Email" required>
+    </div>
+
+    <div class="form-group">
+        <label>Senha</label>
+        <input class="form-control" type="password" name="senha" required>
+    </div>
+
+    <div>
+        <button class="btn btn-outline-info" type="submit">Salvar</button>
+        <a class="btn btn-outline-dark" href="@Url.Action("Index","Usuarios")">Voltar</a>
+    </div>
+</form>

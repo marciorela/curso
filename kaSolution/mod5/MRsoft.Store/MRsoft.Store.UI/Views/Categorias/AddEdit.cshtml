@@ -1,0 +1,23 @@
+﻿@model CategoriasAddEditVM
+
+<h2>@ViewBag.Title</h2>
+
+<form method="post">
+
+    <div class="form-group">
+        <label asp-for="Nome"></label>
+        <input class="form-control" asp-for="Nome" autofocus>
+        <span asp-validation-for="Nome"></span>
+    </div>
+
+    <div>
+        <button class="btn btn-outline-info" type="submit">Salvar</button>
+        <a class="btn btn-outline-dark" asp-controller="Categorias" asp-action="Index">Voltar</a>
+    </div>
+
+</form>
+
+@section scripts {
+    <script src="~/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/node_modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>
+}

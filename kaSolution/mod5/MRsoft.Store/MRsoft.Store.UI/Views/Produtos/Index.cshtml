@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Produto>
+<h2>@ViewBag.Title</h2>
+
+<div class="mb-2">
+    <a class="btn btn-outline-secondary" asp-action="AddEdit" asp-controller="Produtos">Adicionar</a>
+</div>
+
+<div>
+    <table class="table table-hover">
+
+        <thead class="thead-dark">
+            <tr>
+                <th>Nome</th>
+                <th>Categoria</th>
+                <th>Preço</th>
+                <th>Data de Criação</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr id="item-@item.Id">
+                    <td>@item.Nome</td>
+                    <td>@item.Categoria.Nome</td>
+                    <td>@item.PrecoUnitario</td>
+                    <td>@item.DataCriacao</td>
+                    <td>
+                        <a class="btn btn-sm btn-outline-success" asp-controller="Produtos" asp-action="AddEdit" asp-route-id="@item.Id">Editar</a>
+                        <button class="btn btn-sm btn-outline-danger" onclick="delModal(@item.Id,'@item.Nome')">Excluir</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<partial name="_delModal" />
+
+<script>
+    let data = {};
+    data.urlDel = '@Url.Action("Delete", "Produtos")';
+    data.dataTipo = 'Produto';
+</script>
+
+@section scripts {
+    <script src="~/js/delModal.js"></script>
+}

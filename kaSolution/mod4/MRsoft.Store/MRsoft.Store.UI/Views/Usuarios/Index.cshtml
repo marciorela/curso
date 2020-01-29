@@ -1,0 +1,33 @@
+﻿<h2>@ViewBag.Title</h2>
+
+<div class="mb-2">
+    <a class="btn btn-outline-secondary" href="@Url.Action("AddEdit","Usuarios")">Adicionar</a>
+</div>
+
+<div>
+    <table class="table table-hover">
+        
+        <thead class="thead-dark">
+            <tr>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Data de Criação</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Nome</td>
+                    <td>@item.Email</td>
+                    <td>@item.DataCriacao</td>
+                    <td>
+                        <a class="btn btn-sm btn-outline-success" href="@Url.Action("AddEdit","Usuarios", new { id = item.Id })">Editar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,19 @@
+﻿<h2>Novo Cliente</h2>
+
+<form action="/Clientes/Salvar" method="post">
+    <div class="form-group">
+        <label>Nome</label>
+        <input type="text" autofocus class="form-control" name="nome" required/>
+    </div>
+
+    <div class="form-group">
+        <label>Idade</label>
+        <input type="number" step="1" class="form-control" name="idade" required min="18" max="90"/>
+    </div>
+
+    <div class="text-center">
+        <button class="btn btn-outline-success" type="submit">Salvar</button>
+        <button class="btn btn-outline-warning" type="reset">Limpar</button>
+        <a href="/Clientes" class="btn btn-outline-info">Voltar</a>
+    </div>
+</form>

@@ -1,0 +1,13 @@
+D:\fontes\visualstudio\curso\kaSolution\mod5\MRsoft.Store\MRsoft.Store.DI\bin\Debug\netcoreapp2.1\MRsoft.Store.DI.deps.json
+D:\fontes\visualstudio\curso\kaSolution\mod5\MRsoft.Store\MRsoft.Store.DI\bin\Debug\netcoreapp2.1\MRsoft.Store.DI.dll
+D:\fontes\visualstudio\curso\kaSolution\mod5\MRsoft.Store\MRsoft.Store.DI\bin\Debug\netcoreapp2.1\MRsoft.Store.DI.pdb
+D:\fontes\visualstudio\curso\kaSolution\mod5\MRsoft.Store\MRsoft.Store.DI\bin\Debug\netcoreapp2.1\MRsoft.Store.Data.dll
+D:\fontes\visualstudio\curso\kaSolution\mod5\MRsoft.Store\MRsoft.Store.DI\bin\Debug\netcoreapp2.1\MRsoft.Store.Domain.dll
+D:\fontes\visualstudio\curso\kaSolution\mod5\MRsoft.Store\MRsoft.Store.DI\bin\Debug\netcoreapp2.1\MRsoft.Store.Data.pdb
+D:\fontes\visualstudio\curso\kaSolution\mod5\MRsoft.Store\MRsoft.Store.DI\bin\Debug\netcoreapp2.1\MRsoft.Store.Domain.pdb
+D:\fontes\visualstudio\curso\kaSolution\mod5\MRsoft.Store\MRsoft.Store.DI\obj\Debug\netcoreapp2.1\MRsoft.Store.DI.csprojAssemblyReference.cache
+D:\fontes\visualstudio\curso\kaSolution\mod5\MRsoft.Store\MRsoft.Store.DI\obj\Debug\netcoreapp2.1\MRsoft.Store.DI.AssemblyInfoInputs.cache
+D:\fontes\visualstudio\curso\kaSolution\mod5\MRsoft.Store\MRsoft.Store.DI\obj\Debug\netcoreapp2.1\MRsoft.Store.DI.AssemblyInfo.cs
+D:\fontes\visualstudio\curso\kaSolution\mod5\MRsoft.Store\MRsoft.Store.DI\obj\Debug\netcoreapp2.1\MRsoft.Store.DI.csproj.CopyComplete
+D:\fontes\visualstudio\curso\kaSolution\mod5\MRsoft.Store\MRsoft.Store.DI\obj\Debug\netcoreapp2.1\MRsoft.Store.DI.dll
+D:\fontes\visualstudio\curso\kaSolution\mod5\MRsoft.Store\MRsoft.Store.DI\obj\Debug\netcoreapp2.1\MRsoft.Store.DI.pdb

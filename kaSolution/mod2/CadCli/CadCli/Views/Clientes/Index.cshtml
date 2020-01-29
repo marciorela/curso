@@ -1,0 +1,54 @@
+﻿<h2>Listagem de Clientes</h2>
+
+<div style="padding:20px;">
+    <a href="/Clientes/Adicionar" class="btn btn-outline-dark">Adicionar</a>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Data de Cadastro</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (CadCli.Models.Cliente item in Model)
+        {
+            <tr id="cliente-@item.Id">
+                <td>@item.Nome</td>
+                <td>@item.Idade</td>
+                <td>@item.DataCadastro.ToShortDateString()</td>
+                <td>
+                    <a class="btn btn-sm btn-outline-success" href="/Clientes/Editar/@item.Id">Editar</a>
+                    <button class="btn btn-sm btn-outline-danger" onclick="excluir(@item.Id,'@item.Nome')">Excluir</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+    function excluir(id, nome) {
+        let resp = confirm(`Quer excluir o cliente ${nome}?`);
+        if (resp) {
+            // console.log('Excluir...');
+            // xmlhhtprequest
+            let xhr = new XMLHttpRequest();
+            xhr.open('delete', `/clientes/excluir/${id}`);
+            xhr.onloadend = function () {
+                //console.log(xhr);
+                if (xhr.status == 200) {
+                    //console.log(`O cliente ${id} foi excluído com sucesso.`);
+                    document.querySelector(`#cliente-${id}`).remove();
+                } else {
+                    alert(`Xiii... o cliente de Id ${id} não foi encontrado!`);
+                }
+            }
+            xhr.send();
+        }
+    }
+</script>
