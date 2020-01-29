@@ -16,3 +16,5 @@ D:\fontes\visualstudio\curso\Udemy\api_net_core\src\Api.Application\obj\Debug\ne
 D:\fontes\visualstudio\curso\Udemy\api_net_core\src\Api.Application\obj\Debug\netcoreapp3.1\Application.RazorTargetAssemblyInfo.cache
 D:\fontes\visualstudio\curso\Udemy\api_net_core\src\Api.Application\obj\Debug\netcoreapp3.1\Application.dll
 D:\fontes\visualstudio\curso\Udemy\api_net_core\src\Api.Application\obj\Debug\netcoreapp3.1\Application.pdb
+D:\fontes\visualstudio\curso\Udemy\api_net_core\src\Api.Application\obj\Debug\netcoreapp3.1\Application.csproj.CoreCompileInputs.cache
+D:\fontes\visualstudio\curso\Udemy\api_net_core\src\Api.Application\obj\Debug\netcoreapp3.1\Application.genruntimeconfig.cache

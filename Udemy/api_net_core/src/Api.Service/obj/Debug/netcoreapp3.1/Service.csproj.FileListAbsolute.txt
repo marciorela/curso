@@ -6,3 +6,4 @@ D:\fontes\visualstudio\curso\Udemy\api_net_core\src\Api.Service\obj\Debug\netcor
 D:\fontes\visualstudio\curso\Udemy\api_net_core\src\Api.Service\obj\Debug\netcoreapp3.1\Service.AssemblyInfo.cs
 D:\fontes\visualstudio\curso\Udemy\api_net_core\src\Api.Service\obj\Debug\netcoreapp3.1\Service.dll
 D:\fontes\visualstudio\curso\Udemy\api_net_core\src\Api.Service\obj\Debug\netcoreapp3.1\Service.pdb
+D:\fontes\visualstudio\curso\Udemy\api_net_core\src\Api.Service\obj\Debug\netcoreapp3.1\Service.csproj.CoreCompileInputs.cache

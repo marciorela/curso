@@ -8,3 +8,8 @@ D:\fontes\visualstudio\curso\Udemy\api_net_core\src\Api.Data\obj\Debug\netcoreap
 D:\fontes\visualstudio\curso\Udemy\api_net_core\src\Api.Data\obj\Debug\netcoreapp3.1\Data.pdb
 D:\fontes\visualstudio\curso\Udemy\api_net_core\src\Api.Data\bin\Debug\netcoreapp3.1\Data.runtimeconfig.json
 D:\fontes\visualstudio\curso\Udemy\api_net_core\src\Api.Data\bin\Debug\netcoreapp3.1\Data.runtimeconfig.dev.json
+D:\fontes\visualstudio\curso\Udemy\api_net_core\src\Api.Data\bin\Debug\netcoreapp3.1\Domain.dll
+D:\fontes\visualstudio\curso\Udemy\api_net_core\src\Api.Data\bin\Debug\netcoreapp3.1\Domain.pdb
+D:\fontes\visualstudio\curso\Udemy\api_net_core\src\Api.Data\obj\Debug\netcoreapp3.1\Data.csproj.CoreCompileInputs.cache
+D:\fontes\visualstudio\curso\Udemy\api_net_core\src\Api.Data\obj\Debug\netcoreapp3.1\Data.csproj.CopyComplete
+D:\fontes\visualstudio\curso\Udemy\api_net_core\src\Api.Data\obj\Debug\netcoreapp3.1\Data.genruntimeconfig.cache
