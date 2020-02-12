@@ -1,9 +1,0 @@
-D:\fontes\visualstudio\curso\Udemy\api_net_core\src\Api.CrossCutting\bin\Debug\netcoreapp3.1\CrossCutting.deps.json
-D:\fontes\visualstudio\curso\Udemy\api_net_core\src\Api.CrossCutting\bin\Debug\netcoreapp3.1\CrossCutting.dll
-D:\fontes\visualstudio\curso\Udemy\api_net_core\src\Api.CrossCutting\bin\Debug\netcoreapp3.1\CrossCutting.pdb
-D:\fontes\visualstudio\curso\Udemy\api_net_core\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.csprojAssemblyReference.cache
-D:\fontes\visualstudio\curso\Udemy\api_net_core\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.AssemblyInfoInputs.cache
-D:\fontes\visualstudio\curso\Udemy\api_net_core\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.AssemblyInfo.cs
-D:\fontes\visualstudio\curso\Udemy\api_net_core\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.dll
-D:\fontes\visualstudio\curso\Udemy\api_net_core\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.pdb
-D:\fontes\visualstudio\curso\Udemy\api_net_core\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.csproj.CoreCompileInputs.cache
