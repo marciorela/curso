@@ -12,6 +12,7 @@ using Microsoft.Extensions.Logging;
 using Api.CrossCutting.DependencyInjection;
 using Api.Data.Context;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 
 namespace Application
 {
@@ -30,6 +31,21 @@ namespace Application
             ConfigureService.ConfigureDependenciesService(services);
             ConfigureRepository.ConfigureDependenciesRepository(services);
 
+            services.AddMvc();
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { 
+                    Title = "Curso de AspNetCore API", 
+                    Version = "v1",
+                    Description = "Exemplo de API REST criada com ASP.NET Core e VSCode",
+                    Contact = new OpenApiContact {
+                        Name = "Márcio Rela",
+                        // Url = "https://github.com/marciorela"
+                        }
+                    });
+            });
+
             services.AddControllers();
         }
 
@@ -44,6 +60,13 @@ namespace Application
             app.UseRouting();
 
             app.UseAuthorization();
+            
+            // SWAGGER
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Curso de API");
+            });
 
             app.UseEndpoints(endpoints =>
             {
