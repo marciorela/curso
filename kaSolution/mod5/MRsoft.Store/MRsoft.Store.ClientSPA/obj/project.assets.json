@@ -11880,21 +11880,17 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rela.HOME\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\rela.HOME\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\fontes\\visualstudio\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.ClientSPA\\MRsoft.Store.ClientSPA.csproj",
+      "projectUniqueName": "D:\\fontes\\csharp\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.ClientSPA\\MRsoft.Store.ClientSPA.csproj",
       "projectName": "MRsoft.Store.ClientSPA",
-      "projectPath": "D:\\fontes\\visualstudio\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.ClientSPA\\MRsoft.Store.ClientSPA.csproj",
+      "projectPath": "D:\\fontes\\csharp\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.ClientSPA\\MRsoft.Store.ClientSPA.csproj",
       "packagesPath": "C:\\Users\\rela.HOME\\.nuget\\packages\\",
-      "outputPath": "D:\\fontes\\visualstudio\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.ClientSPA\\obj\\",
+      "outputPath": "D:\\fontes\\csharp\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.ClientSPA\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "C:\\Users\\rela.HOME\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -11948,7 +11944,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

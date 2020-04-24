@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "D:\\fontes\\visualstudio\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.DI\\MRsoft.Store.DI.csproj": {}
+    "D:\\fontes\\csharp\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.DI\\MRsoft.Store.DI.csproj": {}
   },
   "projects": {
-    "D:\\fontes\\visualstudio\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.Data\\MRsoft.Store.Data.csproj": {
+    "D:\\fontes\\csharp\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.Data\\MRsoft.Store.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\fontes\\visualstudio\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.Data\\MRsoft.Store.Data.csproj",
+        "projectUniqueName": "D:\\fontes\\csharp\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.Data\\MRsoft.Store.Data.csproj",
         "projectName": "MRsoft.Store.Data",
-        "projectPath": "D:\\fontes\\visualstudio\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.Data\\MRsoft.Store.Data.csproj",
+        "projectPath": "D:\\fontes\\csharp\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.Data\\MRsoft.Store.Data.csproj",
         "packagesPath": "C:\\Users\\rela.HOME\\.nuget\\packages\\",
-        "outputPath": "D:\\fontes\\visualstudio\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.Data\\obj\\",
+        "outputPath": "D:\\fontes\\csharp\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\rela.HOME\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -30,8 +27,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "D:\\fontes\\visualstudio\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.Domain\\MRsoft.Store.Domain.csproj": {
-                "projectPath": "D:\\fontes\\visualstudio\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.Domain\\MRsoft.Store.Domain.csproj"
+              "D:\\fontes\\csharp\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.Domain\\MRsoft.Store.Domain.csproj": {
+                "projectPath": "D:\\fontes\\csharp\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.Domain\\MRsoft.Store.Domain.csproj"
               }
             }
           }
@@ -74,22 +71,19 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\fontes\\visualstudio\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.DI\\MRsoft.Store.DI.csproj": {
+    "D:\\fontes\\csharp\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.DI\\MRsoft.Store.DI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\fontes\\visualstudio\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.DI\\MRsoft.Store.DI.csproj",
+        "projectUniqueName": "D:\\fontes\\csharp\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.DI\\MRsoft.Store.DI.csproj",
         "projectName": "MRsoft.Store.DI",
-        "projectPath": "D:\\fontes\\visualstudio\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.DI\\MRsoft.Store.DI.csproj",
+        "projectPath": "D:\\fontes\\csharp\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.DI\\MRsoft.Store.DI.csproj",
         "packagesPath": "C:\\Users\\rela.HOME\\.nuget\\packages\\",
-        "outputPath": "D:\\fontes\\visualstudio\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.DI\\obj\\",
+        "outputPath": "D:\\fontes\\csharp\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.DI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\rela.HOME\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -104,11 +98,11 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "D:\\fontes\\visualstudio\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.Data\\MRsoft.Store.Data.csproj": {
-                "projectPath": "D:\\fontes\\visualstudio\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.Data\\MRsoft.Store.Data.csproj"
+              "D:\\fontes\\csharp\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.Data\\MRsoft.Store.Data.csproj": {
+                "projectPath": "D:\\fontes\\csharp\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.Data\\MRsoft.Store.Data.csproj"
               },
-              "D:\\fontes\\visualstudio\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.Domain\\MRsoft.Store.Domain.csproj": {
-                "projectPath": "D:\\fontes\\visualstudio\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.Domain\\MRsoft.Store.Domain.csproj"
+              "D:\\fontes\\csharp\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.Domain\\MRsoft.Store.Domain.csproj": {
+                "projectPath": "D:\\fontes\\csharp\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.Domain\\MRsoft.Store.Domain.csproj"
               }
             }
           }
@@ -143,22 +137,19 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\fontes\\visualstudio\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.Domain\\MRsoft.Store.Domain.csproj": {
+    "D:\\fontes\\csharp\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.Domain\\MRsoft.Store.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\fontes\\visualstudio\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.Domain\\MRsoft.Store.Domain.csproj",
+        "projectUniqueName": "D:\\fontes\\csharp\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.Domain\\MRsoft.Store.Domain.csproj",
         "projectName": "MRsoft.Store.Domain",
-        "projectPath": "D:\\fontes\\visualstudio\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.Domain\\MRsoft.Store.Domain.csproj",
+        "projectPath": "D:\\fontes\\csharp\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.Domain\\MRsoft.Store.Domain.csproj",
         "packagesPath": "C:\\Users\\rela.HOME\\.nuget\\packages\\",
-        "outputPath": "D:\\fontes\\visualstudio\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.Domain\\obj\\",
+        "outputPath": "D:\\fontes\\csharp\\curso\\kaSolution\\mod5\\MRsoft.Store\\MRsoft.Store.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\rela.HOME\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -201,7 +192,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
