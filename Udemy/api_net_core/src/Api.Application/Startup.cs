@@ -46,8 +46,8 @@ namespace Application
 
             services.AddAuthentication(authOptions =>
             {
-                authOptions.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticateScheme;
-                authOptions.DefaultChallengeScheme = JwtBearerDefaults.AuthenticateScheme;
+                authOptions.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                authOptions.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
             }).addJwtBearer(bearerOptions =>
             {
                 var paramsValidation = bearerOptions.TokenValidationParameters;
