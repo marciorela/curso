@@ -1,3 +1,4 @@
+using Api.Data.Constant;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 
@@ -7,9 +8,9 @@ namespace Api.Data.Context
     {
         public MyContext CreateDbContext(string[] args)
         {
-            var connectionString = "Server=localhost;Port=3306;Database=CursoApi;Uid=root;Pwd=sasasa";
+            // var connectionString = "Server=192.168.1.19;Database=CursoApi;Uid=sa;Pwd=sa123$567SA";
             var optionsBuilder = new DbContextOptionsBuilder<MyContext>();
-            optionsBuilder.UseMySql(connectionString);
+            optionsBuilder.UseMySql(Constants.connString);
             return new MyContext(optionsBuilder.Options);
         }
     }

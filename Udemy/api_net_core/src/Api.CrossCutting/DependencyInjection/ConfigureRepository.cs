@@ -1,3 +1,4 @@
+using Api.Data.Constant;
 using Api.Data.Context;
 using Api.Data.Implementations;
 using Api.Data.Repository;
@@ -15,7 +16,8 @@ namespace Api.CrossCutting.DependencyInjection
             serviceCollection.AddScoped<IUserRepository, UserImplementation>();
 
             serviceCollection.AddDbContext<MyContext>(
-                options => options.UseMySql("Server=localhost;Port=3306;Database=CursoApi;Uid=root;Pwd=sasasa")
+                options => options.UseMySql(Constants.connString)
+                // options => options.UseSqlServer("Server=192.168.1.19;Database=CursoApi;Uid=sa;Pwd=sa123$567SA")
             );
 
 
