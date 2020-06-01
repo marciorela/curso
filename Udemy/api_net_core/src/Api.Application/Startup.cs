@@ -17,6 +17,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Rewrite;
 
 namespace Application
 {
@@ -66,22 +67,43 @@ namespace Application
                     .RequireAuthenticatedUser().Build());
             });
 
-            services.AddMvc();
+            // services.AddMvc();
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { 
-                    Title = "Curso de AspNetCore API", 
-                    Version = "v1",
-                    Description = "Exemplo de API REST criada com ASP.NET Core e VSCode",
-                    Contact = new OpenApiContact {
-                        Name = "Márcio Rela",
-                        // Url = "https://github.com/marciorela"
+                c.SwaggerDoc("v1",
+                    new OpenApiInfo
+                    {
+                        Title = "Curso de AspNetCore API",
+                        Version = "v1",
+                        Description = "Exemplo de API REST criada com ASP.NET Core e VSCode",
+                        Contact = new OpenApiContact
+                        {
+                            Name = "Márcio Rela",
+                            Url = new Uri("https://github.com/marciorela")
                         }
                     });
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    In = ParameterLocation.Header,
+                    Description = "Entre com o token JWT",
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.ApiKey
+                });
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement {
+                    {
+                        new OpenApiSecurityScheme {
+                            Reference = new OpenApiReference {
+                                Id = "Bearer",
+                                Type = ReferenceType.SecurityScheme
+                            }
+                        }, new List<string>()
+                    }
+                });
             });
 
-            services.AddControllers();
+            services.AddControllers()
+                .AddNewtonsoftJson();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -95,13 +117,18 @@ namespace Application
             app.UseRouting();
 
             app.UseAuthorization();
-            
+
             // SWAGGER
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
+                c.RoutePrefix = string.Empty;
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Curso de API");
             });
+
+            var option = new RewriteOptions();
+            option.AddRedirect("^$", "swagger");
+            app.UseRewriter(option);            
 
             app.UseEndpoints(endpoints =>
             {
