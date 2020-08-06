@@ -1,3 +1,4 @@
+using System;
 using Api.Data.Constant;
 using Api.Data.Context;
 using Api.Data.Implementations;
@@ -15,10 +16,13 @@ namespace Api.CrossCutting.DependencyInjection
             serviceCollection.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
             serviceCollection.AddScoped<IUserRepository, UserImplementation>();
 
-            serviceCollection.AddDbContext<MyContext>(
-                options => options.UseMySql(Constants.connString)
-                // options => options.UseSqlServer("Server=192.168.1.19;Database=CursoApi;Uid=sa;Pwd=sa123$567SA")
-            );
+            if (Environment.GetEnvironmentVariable("DATABASE").ToLower() == "mysql")
+            {
+                serviceCollection.AddDbContext<MyContext>(
+                    // options => options.UseSqlServer(Environment.GetEnvironmentVariable("DB_CONNECTION"))
+                    options => options.UseMySql(Environment.GetEnvironmentVariable("DB_CONNECTION"))
+                );
+            }
 
 
         }
