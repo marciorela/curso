@@ -1,6 +1,6 @@
 using System;
 using System.Threading.Tasks;
-using Api.Domain.DTOs;
+using Api.Domain.Dtos;
 using Api.Domain.Interfaces.Services.User;
 using Moq;
 using Xunit;
@@ -27,7 +27,7 @@ namespace Api.Service.Test.Login
                 message = "Usuário Logado com sucesso"
             };
 
-            var loginDto = new LoginDTO
+            var loginDto = new LoginDto
             {
                 Email = email
             };

@@ -41,6 +41,5 @@ namespace Api.Domain.Models
             get { return _updateAt; }
             set { _updateAt = value; }
         }
-        
     }
 }

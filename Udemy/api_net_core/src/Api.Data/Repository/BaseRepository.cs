@@ -12,13 +12,11 @@ namespace Api.Data.Repository
     {
         protected readonly MyContext _context;
         private DbSet<T> _dataset;
-
         public BaseRepository(MyContext context)
         {
-            this._context = context;
-            this._dataset = context.Set<T>();
+            _context = context;
+            _dataset = _context.Set<T>();
         }
-
         public async Task<bool> DeleteAsync(Guid id)
         {
             try
@@ -31,14 +29,18 @@ namespace Api.Data.Repository
 
                 _dataset.Remove(result);
                 await _context.SaveChangesAsync();
+                return true;
+
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
+        }
 
-            return true;
+        public async Task<bool> ExistAsync(Guid id)
+        {
+            return await _dataset.AnyAsync(p => p.Id.Equals(id));
         }
 
         public async Task<T> InsertAsync(T item)
@@ -54,6 +56,7 @@ namespace Api.Data.Repository
                 _dataset.Add(item);
 
                 await _context.SaveChangesAsync();
+
             }
             catch (Exception ex)
             {
@@ -63,22 +66,16 @@ namespace Api.Data.Repository
             return item;
         }
 
-        public async Task<bool> ExistsAsync(Guid id)
-        {
-            return await _dataset.AnyAsync(p => p.Id.Equals(id));
-        }
-
         public async Task<T> SelectAsync(Guid id)
         {
             try
             {
-                return await _dataset.FirstOrDefaultAsync(p => p.Id.Equals(id));
+                return await _dataset.SingleOrDefaultAsync(p => p.Id.Equals(id));
             }
             catch (Exception ex)
             {
                 throw ex;
             }
-
         }
 
         public async Task<IEnumerable<T>> SelectAsync()
@@ -108,6 +105,7 @@ namespace Api.Data.Repository
 
                 _context.Entry(result).CurrentValues.SetValues(item);
                 await _context.SaveChangesAsync();
+
             }
             catch (Exception ex)
             {

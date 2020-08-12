@@ -1,4 +1,4 @@
-using Api.Domain.DTOs.User;
+using Api.Domain.Dtos.User;
 using Api.Domain.Models;
 using AutoMapper;
 
@@ -14,6 +14,8 @@ namespace Api.CrossCutting.Mappings
                 .ReverseMap();
             CreateMap<UserModel, UserDtoUpdate>()
                 .ReverseMap();
+
         }
+
     }
 }

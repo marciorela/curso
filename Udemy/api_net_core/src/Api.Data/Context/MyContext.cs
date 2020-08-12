@@ -11,9 +11,8 @@ namespace Api.Data.Context
 
         public MyContext(DbContextOptions<MyContext> options) : base(options)
         {
-            // Database.Migrate();
-        }
 
+        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -24,11 +23,13 @@ namespace Api.Data.Context
                 {
                     Id = Guid.NewGuid(),
                     Name = "Administrador",
-                    email = "mail@admin.com",
+                    Email = "mfrinfo@mail.com",
                     CreateAt = DateTime.Now,
-                    UpdateAt = DateTime.Now
+                    UpdateAt = DateTime.Now,
                 }
             );
+
         }
+
     }
 }

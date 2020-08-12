@@ -1,7 +1,7 @@
 using System;
 using System.Net;
 using System.Threading.Tasks;
-using Api.Domain.DTOs.User;
+using Api.Domain.Dtos.User;
 using Api.Domain.Entities;
 using Api.Domain.Interfaces.Services.User;
 using Microsoft.AspNetCore.Authorization;
@@ -9,27 +9,25 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Application.Controllers
 {
+    //http://localhost:5000/api/users
     [Route("api/[controller]")]
     [ApiController]
     public class UsersController : ControllerBase
     {
-        private readonly IUserService _service;
-
+        public IUserService _service { get; set; }
         public UsersController(IUserService service)
         {
-            this._service = service;
+            _service = service;
         }
 
-        [HttpGet]
         [Authorize("Bearer")]
-        //        public async Task<ActionResult> GetAll([FromServices] IUserService service)
+        [HttpGet]
         public async Task<ActionResult> GetAll()
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest(ModelState);
+                return BadRequest(ModelState);  // 400 Bad Request - Solicitação Inválida
             }
-
             try
             {
                 return Ok(await _service.GetAll());
@@ -40,8 +38,8 @@ namespace Api.Application.Controllers
             }
         }
 
-        [HttpGet]
         [Authorize("Bearer")]
+        [HttpGet]
         [Route("{id}", Name = "GetWithId")]
         public async Task<ActionResult> Get(Guid id)
         {
@@ -49,27 +47,30 @@ namespace Api.Application.Controllers
             {
                 return BadRequest(ModelState);
             }
-
             try
             {
-                return Ok(await _service.Get(id));
+                var result = await _service.Get(id);
+                if (result == null)
+                {
+                    return NotFound();
+                }
+
+                return Ok(result);
             }
             catch (ArgumentException e)
             {
-
                 return StatusCode((int)HttpStatusCode.InternalServerError, e.Message);
             }
         }
 
-        [HttpPost]
         [Authorize("Bearer")]
+        [HttpPost]
         public async Task<ActionResult> Post([FromBody] UserDtoCreate user)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
-
             try
             {
                 var result = await _service.Post(user);
@@ -84,20 +85,18 @@ namespace Api.Application.Controllers
             }
             catch (ArgumentException e)
             {
-
                 return StatusCode((int)HttpStatusCode.InternalServerError, e.Message);
             }
         }
 
-        [HttpPut]
         [Authorize("Bearer")]
+        [HttpPut]
         public async Task<ActionResult> Put([FromBody] UserDtoUpdate user)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
-
             try
             {
                 var result = await _service.Put(user);
@@ -112,27 +111,24 @@ namespace Api.Application.Controllers
             }
             catch (ArgumentException e)
             {
-
                 return StatusCode((int)HttpStatusCode.InternalServerError, e.Message);
             }
         }
 
-        [HttpDelete ("{id}")]
         [Authorize("Bearer")]
+        [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(Guid id)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
-
             try
             {
                 return Ok(await _service.Delete(id));
             }
             catch (ArgumentException e)
             {
-
                 return StatusCode((int)HttpStatusCode.InternalServerError, e.Message);
             }
         }

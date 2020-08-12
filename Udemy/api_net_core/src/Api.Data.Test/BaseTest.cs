@@ -1,8 +1,8 @@
 using System;
-using Xunit;
-using Microsoft.Extensions.DependencyInjection;
 using Api.Data.Context;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Xunit;
 
 namespace Api.Data.Test
 {
@@ -14,19 +14,17 @@ namespace Api.Data.Test
         }
     }
 
-    public class DbTeste: IDisposable
+    public class DbTeste : IDisposable
     {
-        
-        private string databaseName = $"curso_api_test_{Guid.NewGuid().ToString().Replace("-", String.Empty)}";
-
-        public ServiceProvider ServiceProvider {get; private set; }
+        private string dataBaseName = $"dbApiTest_{Guid.NewGuid().ToString().Replace("-", string.Empty)}";
+        public ServiceProvider ServiceProvider { get; private set; }
 
         public DbTeste()
         {
             var serviceCollection = new ServiceCollection();
             serviceCollection.AddDbContext<MyContext>(o =>
-                o.UseMySql($"Persist Security Info=True;Server=192.168.1.55;Database={databaseName};User=root;Password=sasasa"),
-                ServiceLifetime.Transient
+                o.UseMySql($"Persist Security Info=True;Server=localhost;Database={dataBaseName};User=root;Password=mudar@123"),
+                  ServiceLifetime.Transient
             );
 
             ServiceProvider = serviceCollection.BuildServiceProvider();
@@ -42,6 +40,7 @@ namespace Api.Data.Test
             {
                 context.Database.EnsureDeleted();
             }
-        }        
+        }
     }
+
 }

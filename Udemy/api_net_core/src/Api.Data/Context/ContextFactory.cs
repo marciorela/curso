@@ -1,5 +1,3 @@
-using System;
-using Api.Data.Constant;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 
@@ -9,9 +7,12 @@ namespace Api.Data.Context
     {
         public MyContext CreateDbContext(string[] args)
         {
-            // var connectionString = "Server=192.168.1.19;Database=CursoApi;Uid=sa;Pwd=sa123$567SA";
+            //Usado para Criar as Migrações
+            var connectionString = "Server=localhost;Port=3306;DataBase=dbAPI2;Uid=root;Pwd=mudar@123";
+            //var connectionString = "Server=.\\SQLEXPRESS2017;Initial Catalog=dbapi;MultipleActiveResultSets=true;User ID=sa;Password=mudar@123";
             var optionsBuilder = new DbContextOptionsBuilder<MyContext>();
-            optionsBuilder.UseMySql(Environment.GetEnvironmentVariable("DB_CONNECTION"));
+            optionsBuilder.UseMySql(connectionString);
+            //optionsBuilder.UseSqlServer(connectionString);
             return new MyContext(optionsBuilder.Options);
         }
     }

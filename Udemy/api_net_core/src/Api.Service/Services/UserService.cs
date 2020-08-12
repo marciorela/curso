@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Api.Domain.DTOs.User;
+using Api.Domain.Dtos.User;
 using Api.Domain.Entities;
 using Api.Domain.Interfaces;
 using Api.Domain.Interfaces.Services.User;
@@ -29,12 +29,12 @@ namespace Api.Service.Services
         public async Task<UserDto> Get(Guid id)
         {
             var entity = await _repository.SelectAsync(id);
-            return _mapper.Map<UserDto>(entity) ??  new UserDto();
+            return _mapper.Map<UserDto>(entity);
         }
 
         public async Task<IEnumerable<UserDto>> GetAll()
         {
-            var listEntity =  await _repository.SelectAsync();
+            var listEntity = await _repository.SelectAsync();
             return _mapper.Map<IEnumerable<UserDto>>(listEntity);
         }
 
@@ -51,8 +51,8 @@ namespace Api.Service.Services
         {
             var model = _mapper.Map<UserModel>(user);
             var entity = _mapper.Map<UserEntity>(model);
-            var result = await _repository.UpdateAsync(entity);
 
+            var result = await _repository.UpdateAsync(entity);
             return _mapper.Map<UserDtoUpdateResult>(result);
         }
     }
