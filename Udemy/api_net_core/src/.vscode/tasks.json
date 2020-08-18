@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/src/Api.Application/application.csproj",
+                "${workspaceFolder}/Api.Application/Application.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/src/Api.Application/application.csproj",
+                "${workspaceFolder}/Api.Application/Application.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -32,7 +32,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/src/Api.Application/application.csproj",
+                "${workspaceFolder}/Api.Application/Application.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -44,7 +44,7 @@
             "type": "process",
             "args": [
                 "test",
-                "${workspaceFolder}/src/Api.Data.Test/Api.Data.Test.csproj",
+                "${workspaceFolder}/Api.Data.Test/Api.Data.Test.csproj",
             ]
         },
         {
@@ -53,7 +53,7 @@
             "type": "process",
             "args": [
                 "test",
-                "${workspaceFolder}/src/Api.Service.Test/Api.Service.Test.csproj",
+                "${workspaceFolder}/Api.Service.Test/Api.Service.Test.csproj",
             ]
         },
         {
@@ -62,7 +62,7 @@
             "type": "process",
             "args": [
                 "test",
-                "${workspaceFolder}/src/Api.Application.Test/Api.Application.Test.csproj",
+                "${workspaceFolder}/Api.Application.Test/Api.Application.Test.csproj",
             ]
         }
     ]
