@@ -20,6 +20,30 @@ namespace Api.CrossCutting.Mappings
             CreateMap<UserDtoUpdateResult, UserEntity>()
                .ReverseMap();
 
+            CreateMap<UfDto, UfEntity>()
+               .ReverseMap();
+
+            CreateMap<MunicipioDto, MunicipioEntity>()
+               .ReverseMap();
+
+            CreateMap<MunicipioDtoCompleto, MunicipioEntity>()
+               .ReverseMap();
+
+            CreateMap<MunicipioDtoCreateResult, MunicipioEntity>()
+               .ReverseMap();
+
+            CreateMap<MunicipioDtoUpdateResult, MunicipioEntity>()
+               .ReverseMap();
+
+            CreateMap<CepDto, CepEntity>()
+               .ReverseMap();
+
+            CreateMap<CepDtoCreateResult, CepEntity>()
+               .ReverseMap();
+
+            CreateMap<CepDtoUpdateResult, CepEntity>()
+               .ReverseMap();
+
         }
     }
 }

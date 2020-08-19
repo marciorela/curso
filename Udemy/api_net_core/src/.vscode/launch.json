@@ -10,7 +10,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/Api.Application/bin/Debug/netcoreapp3.0/Application.dll",
+            "program": "${workspaceFolder}/Api.Application/bin/Debug/netcoreapp3.1/Application.dll",
             "args": [],
             "cwd": "${workspaceFolder}/Api.Application",
             "stopAtEntry": false,
@@ -23,7 +23,10 @@
                 "ASPNETCORE_ENVIRONMENT": "Development",
                 "DB_CONNECTION": "Server=192.168.1.55;Database=curso_api;Uid=root;Pwd=sasasa",
                 "DATABASE": "MYSQL",
-                "MIGRATION": "APPLY"
+                "MIGRATION": "APPLY",
+                "Audience": "ExemploAudience",
+                "Issuer": "ExemploIssue",
+                "Seconds": "28800"
             },
             "sourceFileMap": {
                 "/Views": "${workspaceFolder}/Views"

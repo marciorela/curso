@@ -341,7 +341,7 @@ namespace Data.Migrations
                         {
                             Id = new Guid("711ed73d-7430-4dac-bc65-7fa48f1a1c0b"),
                             CreateAt = new DateTime(2020, 7, 23, 17, 19, 17, 276, DateTimeKind.Local).AddTicks(7331),
-                            Email = "mfrinfo@mail.com",
+                            Email = "user@example.com",
                             Name = "Administrador",
                             UpdateAt = new DateTime(2020, 7, 23, 17, 19, 17, 277, DateTimeKind.Local).AddTicks(7159)
                         });
