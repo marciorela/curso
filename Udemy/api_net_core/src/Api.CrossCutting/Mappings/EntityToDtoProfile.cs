@@ -1,3 +1,6 @@
+using Api.Domain.Dtos.Cep;
+using Api.Domain.Dtos.Municipio;
+using Api.Domain.Dtos.Uf;
 using Api.Domain.Dtos.User;
 using Api.Domain.Entities;
 using AutoMapper;

@@ -34,9 +34,9 @@ namespace application
         {
             if (_environment.IsEnvironment("Testing"))
             {
-                Environment.SetEnvironmentVariable("DB_CONNECTION", "Persist Security Info=True;Server=localhost;Port=3306;DataBase=dbAPI_Integration;Uid=root;Pwd=mudar@123");
+                Environment.SetEnvironmentVariable("DB_CONNECTION", "Persist Security Info=True;Server=192.168.1.55;Port=3306;DataBase=curso_api;Uid=root;Pwd=sasasa");
                 Environment.SetEnvironmentVariable("DATABASE", "MYSQL");
-                Environment.SetEnvironmentVariable("MIGRATION", "APLICAR");
+                Environment.SetEnvironmentVariable("MIGRATION", "APPLY");
                 Environment.SetEnvironmentVariable("Audience", "ExemploAudience");
                 Environment.SetEnvironmentVariable("Issuer", "ExemploIssue");
                 Environment.SetEnvironmentVariable("Seconds", "28800");
