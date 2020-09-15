@@ -1,0 +1,55 @@
+﻿using System;
+
+namespace CursoFoop_Nomenclatura1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+             //Válidos
+            string nomeAluno = "Macoratti";
+            int idadeMinima = 10;
+            int IdadeMinima = 20;
+            double _taxa = 1.45;
+            int numero_aluno1 = 100;
+            double y2x5_w7 = 3.4;
+            int @valorInicial = 30;
+            var \u0043sharp = "CSharp";
+
+            //Inválidos
+            bool verifica#Conta = true;
+            int decimal = 34.00;
+            string 1sexo = "masculino";
+            string #cliente = "Paulo";
+            bool $teste = false;
+            double Valor juros = 1.23;
+            int idade@Maxima = 99;
+            double valor$desconto = 100;
+            double taxa%desconto = 2.40;            
+        }
+    }
+
+    class CalculaDesconto
+    {
+        double taxaEncargos = 1.99;
+        public int ValorImpostoTotal { get; set; }
+        public double CalculoEncargos(double valorTotal)
+        {
+            return valorTotal * taxaEncargos;
+        }
+    }
+
+    public class AtividadeCliente
+    {
+        public void LimpaAtividade()
+        {}
+        public void CalculaEstatisticas()
+        {}
+
+        public void Incluir(string nomeCliente)
+        {
+            double valorDesconto = 3.45;
+        }
+
+    }
+}
