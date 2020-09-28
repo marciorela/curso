@@ -31,6 +31,7 @@ namespace Store.Domain.Commands
             AddNotifications(new Contract()
                 .Requires()
                 .HasLen(Customer, 11, "Customer", "Cliente inválido")
+                .IsGreaterThan(Items.Count, 0, "Items", "Quantidade de itens inválida")
                 .HasLen(ZipCode, 8, "ZipCode", "CEP inválido")
             );
         }
